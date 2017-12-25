@@ -34,6 +34,6 @@ public class Team {
     @OneToMany
     private Player player;
 
-    //TODO: getter setter
+    //TODO:  generate getter setter
 
 }

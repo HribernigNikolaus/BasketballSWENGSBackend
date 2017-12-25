@@ -12,7 +12,8 @@ public class League {
     private String name;
     private String land;
 
-
+    @OneToMany
+    private Team team;
 
     @Version
     private long version;
@@ -25,7 +26,6 @@ public class League {
         this.name = name;
         this.land = land;
     }
-    //TODO: implement FKs
     //TODO: generate getter and setter
 }
 

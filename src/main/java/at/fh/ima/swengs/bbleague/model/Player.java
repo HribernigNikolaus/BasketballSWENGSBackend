@@ -32,6 +32,8 @@ public class Player {
 
     private Number shoeSize;
 
+    @ManyToOne
+    private Team team;
 
 
     @Version
@@ -134,5 +136,4 @@ public class Player {
     }
 }
 
-//TODO: implement FK'S and generate missing get/set
-
+//TODO: generate missing getter and setter

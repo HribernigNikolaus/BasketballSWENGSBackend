@@ -32,6 +32,8 @@ public class Stadium {
 
     private long visitorLimit;
 
+    @OneToMany
+    private Stadium stadium;
 
 
 
@@ -52,7 +54,6 @@ public class Stadium {
         this.buildDate = buildDate;
         this.visitorLimit = visitorLimit;
     }
-    //TODO: implement FKs
     //TODO: generate getter and setter
 }
 
