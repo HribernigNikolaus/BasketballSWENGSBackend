@@ -28,8 +28,6 @@ public class Player {
 
     private Number height;
 
-    private Number weight;
-
     private String position;
 
     @ManyToOne
@@ -44,14 +42,13 @@ public class Player {
 
     }
 
-    public Player(String firstName, String lastName, Date dayOfBirth, Number marketValue, int playerNumber, Number height, Number weight, String position, Team team) {
+    public Player(String firstName, String lastName, Date dayOfBirth, Number marketValue, int playerNumber, Number height, String position, Team team) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dayOfBirth = dayOfBirth;
         this.marketValue = marketValue;
         this.playerNumber = playerNumber;
         this.height = height;
-        this.weight = weight;
         this.position = position;
         this.team = team;
     }
@@ -110,14 +107,6 @@ public class Player {
 
     public void setHeight(Number height) {
         this.height = height;
-    }
-
-    public Number getWeight() {
-        return weight;
-    }
-
-    public void setWeight(Number weight) {
-        this.weight = weight;
     }
 
     public String getPosition() {
