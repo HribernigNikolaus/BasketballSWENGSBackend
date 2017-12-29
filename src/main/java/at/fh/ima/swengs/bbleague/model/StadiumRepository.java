@@ -10,7 +10,7 @@ import java.util.List;
 public interface StadiumRepository extends PagingAndSortingRepository<Stadium, Long> {
 
     //This would be exposed under the URL: http://localhost:8080/passengers/search/findByFirstNameAndLastName
-    List<Stadium> findByName(@Param("name") String name);
-    List<Stadium> findByLandAndCity(@Param("land") String land, @Param("city")String city);
+  public  Stadium findByNameAndCity(@Param("name") String name, @Param("city") String city);
+  public  List<Stadium> findByLandAndCity(@Param("land") String land, @Param("city")String city);
 
 }

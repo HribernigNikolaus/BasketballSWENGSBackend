@@ -44,7 +44,7 @@ public class Player {
 
     }
 
-    public Player(String firstName, String lastName, Date dayOfBirth, Number marketValue, int sozNr, Number height, Number weight, Number shoeSize) {
+    public Player(String firstName, String lastName, Date dayOfBirth, Number marketValue, int sozNr, Number height, Number weight, Number shoeSize, Team team) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dayOfBirth = dayOfBirth;
@@ -53,6 +53,7 @@ public class Player {
         this.height = height;
         this.weight = weight;
         this.shoeSize = shoeSize;
+        this.team = team;
     }
 
     public long getId() {

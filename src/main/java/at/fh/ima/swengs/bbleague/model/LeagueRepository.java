@@ -11,7 +11,7 @@ import java.util.List;
 public interface LeagueRepository extends PagingAndSortingRepository<League, Long> {
 
     //This would be exposed under the URL: http://localhost:8080/passengers/search/findByFirstNameAndLastName
-    List<League> findByName(@Param("name") String name);
+    League findByName(@Param("name") String name);
     List<League> findByLand(@Param("land") String land);
 
 }

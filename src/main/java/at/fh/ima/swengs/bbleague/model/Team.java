@@ -36,6 +36,20 @@ public class Team {
     @OneToMany(mappedBy = "team",orphanRemoval = true)
     private List<Player> players;
 
+    public Team() {
+
+    }
+
+    public Team(String name, String hometown, Date startDate, String mascot, Stadium stadium, League league){
+        this.name = name;
+        this.hometown = hometown;
+        this.startDate = startDate;
+        this.mascot = mascot;
+        this.stadium = stadium;
+        this.league = league;
+
+    }
+
     public long getId() {
         return id;
     }
