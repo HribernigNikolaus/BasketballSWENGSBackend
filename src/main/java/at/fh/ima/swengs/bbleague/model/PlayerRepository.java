@@ -10,6 +10,6 @@ import java.util.List;
 public interface PlayerRepository extends PagingAndSortingRepository<Player, Long> {
 
         //This would be exposed under the URL: http://localhost:8080/passengers/search/findByFirstNameAndLastName
-        public List<Player> findByFirstNameAndLastName(@Param("firstName") String firstName, @Param("lastName")String lastName);
+        List<Player> findByFirstNameAndLastName(@Param("firstName") String firstName, @Param("lastName")String lastName);
 
 }

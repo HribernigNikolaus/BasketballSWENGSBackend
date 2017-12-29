@@ -8,11 +8,10 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import java.util.List;
 
 @RepositoryRestResource
-public interface LeagueRepository extends PagingAndSortingRepository<Player, Long> {
+public interface LeagueRepository extends PagingAndSortingRepository<League, Long> {
 
     //This would be exposed under the URL: http://localhost:8080/passengers/search/findByFirstNameAndLastName
-    public List<League> findByFirstNameAndLastName(@Param("firstName") String firstName, @Param("lastName")String lastName);
-
-    //TODO: change pagingsort
+    List<League> findByName(@Param("name") String name);
+    List<League> findByLand(@Param("land") String land);
 
 }
