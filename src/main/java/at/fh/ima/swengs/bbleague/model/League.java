@@ -1,6 +1,7 @@
 package at.fh.ima.swengs.bbleague.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class League {
@@ -12,8 +13,8 @@ public class League {
     private String name;
     private String land;
 
-    @OneToMany
-    private Team team;
+    @OneToMany(mappedBy = "league",orphanRemoval = true)
+    private List<Team> teams;
 
     @Version
     private long version;
@@ -51,12 +52,12 @@ public class League {
         this.land = land;
     }
 
-    public Team getTeam() {
-        return team;
+    public List<Team> getTeams() {
+        return teams;
     }
 
-    public void setTeam(Team team) {
-        this.team = team;
+    public void addTeam(Team team) {
+        this.teams.add(team);
     }
 
     public long getVersion() {

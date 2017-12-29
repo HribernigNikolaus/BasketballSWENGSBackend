@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Stadium {
@@ -32,8 +33,8 @@ public class Stadium {
 
     private long visitorLimit;
 
-    @OneToMany
-    private Stadium stadium;
+    @OneToMany(mappedBy = "stadium",orphanRemoval = true)
+    private List<Team> teams;
 
 
 
@@ -119,12 +120,12 @@ public class Stadium {
         this.visitorLimit = visitorLimit;
     }
 
-    public Stadium getStadium() {
-        return stadium;
+    public List<Team> getTeam() {
+        return teams;
     }
 
-    public void setStadium(Stadium stadium) {
-        this.stadium = stadium;
+    public void addTeam(Team team) {
+        this.teams.add(team);
     }
 
     public long getVersion() {

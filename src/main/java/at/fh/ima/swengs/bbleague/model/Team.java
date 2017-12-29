@@ -7,7 +7,9 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
+@Entity
 public class Team {
 
     @Id
@@ -31,8 +33,8 @@ public class Team {
     @ManyToOne
     private League league;
 
-    @OneToMany
-    private Player player;
+    @OneToMany(mappedBy = "team",orphanRemoval = true)
+    private List<Player> players;
 
     public long getId() {
         return id;
@@ -90,11 +92,11 @@ public class Team {
         this.league = league;
     }
 
-    public Player getPlayer() {
-        return player;
+    public List<Player> getPlayers() {
+        return players;
     }
 
-    public void setPlayer(Player player) {
-        this.player = player;
+    public void addPlayer(Player players) {
+        this.players.add(players);
     }
 }
