@@ -24,7 +24,7 @@ public class Player {
 
     private Number marketValue;
 
-    private int sozNr;
+    private int playerNumber;
 
     private Number height;
 
@@ -44,12 +44,12 @@ public class Player {
 
     }
 
-    public Player(String firstName, String lastName, Date dayOfBirth, Number marketValue, int sozNr, Number height, Number weight, Number shoeSize, Team team) {
+    public Player(String firstName, String lastName, Date dayOfBirth, Number marketValue, int playerNumber, Number height, Number weight, Number shoeSize, Team team) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dayOfBirth = dayOfBirth;
         this.marketValue = marketValue;
-        this.sozNr = sozNr;
+        this.playerNumber = playerNumber;
         this.height = height;
         this.weight = weight;
         this.shoeSize = shoeSize;
@@ -96,12 +96,12 @@ public class Player {
         this.marketValue = marketValue;
     }
 
-    public int getSozNr() {
-        return sozNr;
+    public int getPlayerNumber() {
+        return playerNumber;
     }
 
-    public void setSozNr(int sozNr) {
-        this.sozNr = sozNr;
+    public void setPlayerNumber(int playerNumber) {
+        this.playerNumber = playerNumber;
     }
 
     public Number getHeight() {
