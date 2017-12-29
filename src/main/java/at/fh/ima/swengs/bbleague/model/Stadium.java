@@ -54,7 +54,86 @@ public class Stadium {
         this.buildDate = buildDate;
         this.visitorLimit = visitorLimit;
     }
-    //TODO: generate getter and setter
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLand() {
+        return land;
+    }
+
+    public void setLand(String land) {
+        this.land = land;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getStreetAndNumber() {
+        return streetAndNumber;
+    }
+
+    public void setStreetAndNumber(String streetAndNumber) {
+        this.streetAndNumber = streetAndNumber;
+    }
+
+    public short getPlz() {
+        return plz;
+    }
+
+    public void setPlz(short plz) {
+        this.plz = plz;
+    }
+
+    public Date getBuildDate() {
+        return buildDate;
+    }
+
+    public void setBuildDate(Date buildDate) {
+        this.buildDate = buildDate;
+    }
+
+    public long getVisitorLimit() {
+        return visitorLimit;
+    }
+
+    public void setVisitorLimit(long visitorLimit) {
+        this.visitorLimit = visitorLimit;
+    }
+
+    public Stadium getStadium() {
+        return stadium;
+    }
+
+    public void setStadium(Stadium stadium) {
+        this.stadium = stadium;
+    }
+
+    public long getVersion() {
+        return version;
+    }
+
+    public void setVersion(long version) {
+        this.version = version;
+    }
 }
 
 

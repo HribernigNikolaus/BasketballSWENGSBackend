@@ -134,6 +134,12 @@ public class Player {
     public void setVersion(long version) {
         this.version = version;
     }
-}
 
-//TODO: generate missing getter and setter
+    public Team getTeam() {
+        return team;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
+    }
+}
