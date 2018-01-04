@@ -24,7 +24,7 @@ public class Stadium {
 
     private String streetAndNumber;
 
-    private short plz;
+    private String plz;
 
     @JsonDeserialize(using = JsonDateDeserializer.class)
     @JsonSerialize(using = JsonDateSerializer.class)
@@ -46,7 +46,7 @@ public class Stadium {
 
     }
 
-    public Stadium(String name, String land, String city, String streetAndNumber, short plz, Date buildDate, long visitorLimit) {
+    public Stadium(String name, String land, String city, String streetAndNumber, String plz, Date buildDate, long visitorLimit) {
         this.name = name;
         this.land = land;
         this.city = city;
@@ -96,11 +96,11 @@ public class Stadium {
         this.streetAndNumber = streetAndNumber;
     }
 
-    public short getPlz() {
+    public String getPlz() {
         return plz;
     }
 
-    public void setPlz(short plz) {
+    public void setPlz(String plz) {
         this.plz = plz;
     }
 
