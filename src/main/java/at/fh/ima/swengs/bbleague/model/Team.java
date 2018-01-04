@@ -36,6 +36,9 @@ public class Team {
     @OneToMany(mappedBy = "team",orphanRemoval = true)
     private List<Player> players;
 
+    @Version
+    private long version;
+
     public Team() {
 
     }
