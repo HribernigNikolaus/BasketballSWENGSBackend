@@ -115,5 +115,5 @@ public class Team {
 
     public void addPlayer(Player players) {
         this.players.add(players);
-    }
+    } //TODO: check if setPlayer isnt necessary
 }
