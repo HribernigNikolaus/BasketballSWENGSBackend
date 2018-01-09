@@ -59,12 +59,8 @@ public class League {
         this.land = land;
     }
 
-    public List<Team> getTeams() {
+    public List<Team> getTeam() {
         return teams;
-    }
-
-    public void setTeams(List<Team> teams) {
-        this.teams = teams;
     }
 
     public void addTeam(Team team) {
