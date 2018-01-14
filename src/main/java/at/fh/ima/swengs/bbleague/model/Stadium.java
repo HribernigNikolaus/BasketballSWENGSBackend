@@ -126,7 +126,7 @@ public class Stadium {
 
     public void addTeam(Team team) {
         this.teams.add(team);
-    }
+    } //TODO: check if setTeam isnt necessary
 
     public long getVersion() {
         return version;

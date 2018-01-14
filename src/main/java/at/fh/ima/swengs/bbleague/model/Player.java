@@ -22,13 +22,11 @@ public class Player {
     @Temporal(TemporalType.DATE)
     private Date dayOfBirth;
 
-    private Number marketValue;
+    private Double marketValue;
 
     private int playerNumber;
 
-    private Number height;
-
-    private Number weight;
+    private Double height;
 
     private String position;
 
@@ -45,14 +43,13 @@ public class Player {
 
     }
 
-    public Player(String firstName, String lastName, Date dayOfBirth, Number marketValue, int playerNumber, Number height, Number weight, String position, Team team) {
+    public Player(String firstName, String lastName, Date dayOfBirth, Double marketValue, int playerNumber, Double height, String position, Team team) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dayOfBirth = dayOfBirth;
         this.marketValue = marketValue;
         this.playerNumber = playerNumber;
         this.height = height;
-        this.weight = weight;
         this.position = position;
         this.team = team;
     }
@@ -89,11 +86,11 @@ public class Player {
         this.dayOfBirth = dayOfBirth;
     }
 
-    public Number getMarketValue() {
+    public Double getMarketValue() {
         return marketValue;
     }
 
-    public void setMarketValue(Number marketValue) {
+    public void setMarketValue(Double marketValue) {
         this.marketValue = marketValue;
     }
 
@@ -105,20 +102,12 @@ public class Player {
         this.playerNumber = playerNumber;
     }
 
-    public Number getHeight() {
+    public Double getHeight() {
         return height;
     }
 
-    public void setHeight(Number height) {
+    public void setHeight(Double height) {
         this.height = height;
-    }
-
-    public Number getWeight() {
-        return weight;
-    }
-
-    public void setWeight(Number weight) {
-        this.weight = weight;
     }
 
     public String getPosition() {
