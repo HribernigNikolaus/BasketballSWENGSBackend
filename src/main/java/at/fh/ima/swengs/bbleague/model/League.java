@@ -98,6 +98,10 @@ public class League {
     public void setVersion(long version) {
         this.version = version;
     }
+
+    public void setTeam(List<Team> teams) {
+        this.teams = teams;
+    }
 }
 
 

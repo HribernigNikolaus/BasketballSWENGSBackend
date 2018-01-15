@@ -113,6 +113,12 @@ public class Team {
         return players;
     }
 
+    public List<Player> getPlayer() {return players;}
+
+    public void setPlayer(List<Player> player) {
+        this.players = players;
+    }
+
     public void addPlayer(Player players) {
         this.players.add(players);
     } //TODO: check if setPlayer isnt necessary
