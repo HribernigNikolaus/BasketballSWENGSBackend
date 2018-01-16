@@ -33,7 +33,7 @@ public class Stadium {
 
     private long visitorLimit;
 
-    @OneToMany(mappedBy = "stadium",orphanRemoval = true)
+    @OneToMany(mappedBy = "stadium")//,orphanRemoval = true)
     private List<Team> teams;
 
 
@@ -122,6 +122,10 @@ public class Stadium {
 
     public List<Team> getTeam() {
         return teams;
+    }
+
+    public void setTeam(List<Team> teams){
+        this.teams = teams;
     }
 
     public void addTeam(Team team) {

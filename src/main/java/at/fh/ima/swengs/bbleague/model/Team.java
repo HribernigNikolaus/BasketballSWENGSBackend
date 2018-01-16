@@ -33,7 +33,7 @@ public class Team {
     @ManyToOne
     private League league;
 
-    @OneToMany(mappedBy = "team",orphanRemoval = true)
+    @OneToMany(mappedBy = "team")//,orphanRemoval = true)
     private List<Player> players;
 
     @Version
@@ -111,6 +111,12 @@ public class Team {
 
     public List<Player> getPlayers() {
         return players;
+    }
+
+    public List<Player> getPlayer() {return players;}
+
+    public void setPlayer(List<Player> player) {
+        this.players = players;
     }
 
     public void addPlayer(Player players) {
