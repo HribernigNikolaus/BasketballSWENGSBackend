@@ -17,10 +17,10 @@ public class Player {
     private String firstName;
     private String lastName;
 
-    @JsonDeserialize(using = JsonDateDeserializer.class)
-    @JsonSerialize(using = JsonDateSerializer.class)
-    @Temporal(TemporalType.DATE)
-    private Date dayOfBirth;
+   // @JsonDeserialize(using = JsonDateDeserializer.class)
+    //@JsonSerialize(using = JsonDateSerializer.class)
+    //@Temporal(TemporalType.DATE)
+    private String dayOfBirth;
 
     private Double marketValue;
 
@@ -43,7 +43,7 @@ public class Player {
 
     }
 
-    public Player(String firstName, String lastName, Date dayOfBirth, Double marketValue, int playerNumber, Double height, String position, Team team) {
+    public Player(String firstName, String lastName, String dayOfBirth, Double marketValue, int playerNumber, Double height, String position, Team team) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dayOfBirth = dayOfBirth;
@@ -78,11 +78,11 @@ public class Player {
         this.lastName = lastName;
     }
 
-    public Date getDayOfBirth() {
+    public String getDayOfBirth() {
         return dayOfBirth;
     }
 
-    public void setDayOfBirth(Date dayOfBirth) {
+    public void setDayOfBirth(String dayOfBirth) {
         this.dayOfBirth = dayOfBirth;
     }
 
