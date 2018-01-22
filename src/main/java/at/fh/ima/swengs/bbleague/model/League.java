@@ -16,7 +16,7 @@ public class League {
     private int teamCount;
     private int foundationYear;
 
-    @OneToMany(mappedBy = "league",orphanRemoval = true)
+    @OneToMany(mappedBy = "league")//,orphanRemoval = true)
     private List<Team> teams;
 
     @Version
