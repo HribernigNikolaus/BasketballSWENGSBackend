@@ -2,32 +2,32 @@
 NEW!!!
 
 
-insert into stadium (build_date, city, land, name, plz, street_and_number, visitor_limit, version)
-values ('1994-8-18', 'Chicago', 'USA', 'United Center', '60612','1901 W Madison St', '21711', 0),
-			('2008-09-10','Berlin', 'Deutschland', 'Mercedes-Benz Arena','10243', 'Mercedes-Platz 1', '14500',0),
-            ('1995-09-30', 'Boston', 'USA', 'TD Garden', '02114', '100 Legends Way,', '19580', 0),
-            ('2010-01-01', 'Graz', 'Österreich', 'Unionhalle', '8010', 'Gaussgasse 3', '1600', 0);
+    insert into stadium (build_date, city, land, name, plz, street_and_number, visitor_limit, version)
+    values ('1994-8-18', 'Chicago', 'USA', 'United Center', '60612','1901 W Madison St', '21711', 0),
+                ('2008-09-10','Berlin', 'Deutschland', 'Mercedes-Benz Arena','10243', 'Mercedes-Platz 1', '14500',0),
+                ('1995-09-30', 'Boston', 'USA', 'TD Garden', '02114', '100 Legends Way,', '19580', 0),
+                ('2010-01-01', 'Graz', 'Österreich', 'Unionhalle', '8010', 'Gaussgasse 3', '1600', 0);
 
 
-insert into league (name, full_name, land, team_count, foundation_year, version)
-values ('NBA','National Basketball Association', 'USA', '30', '1946', 0),
-		('BBL','easyCredit Baskeball-Bundesliga', 'Deutschland','18', '1966', 0),
-        ('ABL', 'Admiral Basketball Bundesliga', 'Österreich', '9', '1998', 0);
+    insert into league (name, full_name, land, team_count, foundation_year, version)
+    values ('NBA','National Basketball Association', 'USA', '30', '1946', 0),
+            ('BBL','easyCredit Baskeball-Bundesliga', 'Deutschland','18', '1966', 0),
+            ('ABL', 'Admiral Basketball Bundesliga', 'Österreich', '9', '1998', 0);
 
 
-insert into team (name, hometown, start_date, mascot, stadium_id, league_id,version)
-values('Chicago Bulls', 'Chicago','1966-01-01', 'Benny the Bull', '1', '1',0),
-		('Alba Berlin', 'Berlin','1991-01-01', 'Albatros', '2', '2', 0),
-        ('Boston Celtics', 'Boston', '1946-01-01','Lucky the Leprechaun', '3', '1',0),
-        ('UBSC Raiffeisen Graz', 'Graz', '1956-01-01', '', '4', '3',0);
+    insert into team (name, hometown, start_date, mascot, stadium_id, league_id,version)
+    values('Chicago Bulls', 'Chicago','1966-01-01', 'Benny the Bull', '1', '1',0),
+            ('Alba Berlin', 'Berlin','1991-01-01', 'Albatros', '2', '2', 0),
+            ('Boston Celtics', 'Boston', '1946-01-01','Lucky the Leprechaun', '3', '1',0),
+            ('UBSC Raiffeisen Graz', 'Graz', '1956-01-01', '', '4', '3',0);
 
 
-insert into player (first_name, last_name, day_of_birth, market_value, player_number, height, position, team_id, version)
-values('Jerian', 'Grant', '1992-10-09','1700000', '2', '193','Guard','1',0),
-		('Peyton', 'Siva', '1990-10-24','700000', '7', '182','Guard', '2',0),
-        ('Michael', 'Jordan', '1963-02-17', '0', '7', '198', 'Guard', '1', 0),
-        ('Bobby', 'Portis', '1995-02-10', '120000', '5', '211', 'Forward', '1',0),
-        ('Niels','Giffey','1991-06-08','150000','5','200','Forward','2',0);
+    insert into player (first_name, last_name, day_of_birth, market_value, player_number, height, position, team_id, version)
+    values('Jerian', 'Grant', '1992-10-09','1700000', '2', '193','Guard','1',0),
+            ('Peyton', 'Siva', '1990-10-24','700000', '7', '182','Guard', '2',0),
+            ('Michael', 'Jordan', '1963-02-17', '0', '7', '198', 'Guard', '1', 0),
+            ('Bobby', 'Portis', '1995-02-10', '120000', '5', '211', 'Forward', '1',0),
+            ('Niels','Giffey','1991-06-08','150000','5','200','Forward','2',0);
 
 
         select * from stadium;
