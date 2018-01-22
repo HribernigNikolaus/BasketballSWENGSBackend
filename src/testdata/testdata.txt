@@ -35,3 +35,7 @@ select * from player;
 select * from team;
 select * from league;
 select * from stadium;
+
+
+security test curl:
+curl -i -X POST -d '{"name": "test2", "fullName": "testfull", "land": "testland", "teamCount": "19", "foundationYear":1999, "version": 1}' -H "Content-Type: application/json" localhost:8080/leagues -u admin:admin

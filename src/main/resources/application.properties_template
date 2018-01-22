@@ -19,6 +19,12 @@ spring.jpa.hibernate.naming-strategy = org.hibernate.cfg.ImprovedNamingStrategy
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
 
 
+#TODO: OAUTH2
+#security.oauth2.client.client-id=test
+#security.oauth2..client.client-secret=test
+#security.oauth2.resource.id=service
+#security.oauth2.resource.user-info-uri=http://localhost:8080/user
+#security.oauth2.resource.token-info-uri=http://localhost8080/oauth/check_token
 
 server.port=8080
 #server.ssl.key-store=classpath:keystore.p12

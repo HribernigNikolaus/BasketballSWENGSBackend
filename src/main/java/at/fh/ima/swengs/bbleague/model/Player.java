@@ -30,7 +30,7 @@ public class Player {
 
     private String position;
 
-    //TODO: es gibt hier ein Problem - Height, marketvalue und weight werden in der DB als "tinyblob" angelegt und dementsprechend abgespeichert? 
+    //TODO: es gibt hier ein Problem - Height, marketvalue und weight werden in der DB als "tinyblob" angelegt und dementsprechend abgespeichert?
     @ManyToOne
     private Team team;
 
