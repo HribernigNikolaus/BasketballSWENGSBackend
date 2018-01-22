@@ -21,14 +21,14 @@ https://github.com/HribernigNikolaus/BasketballSWENGS
   change name to application.properties 
   (file will not be submitted because its listed in the .gitignore)
 
-#Testdata
+# Testdata
 testdata could be found in ./testdata/testdata.txt 
 just copy  & paste it via MySQLWorkbench or any other DB Editor and your first Teams, Players, Leagues, will appear on your frontend
 
 
-#Entity description   
+# Entity description   
 
-##League
+## League
 * **Entity of Carina:**
     * **attributes:** name, fullName, teamCount, land, foundationYear
     * **searchfeatuers:**
@@ -36,7 +36,7 @@ just copy  & paste it via MySQLWorkbench or any other DB Editor and your first T
         * findByLand
         * findById  
         
-##Stadium
+## Stadium
 * **Entity of Vanessa:**
     * **attributes:** name, land, city, streetAndNumber, plz, buildDate, visitorLimit
     * **searchfeatuers:**
@@ -44,14 +44,14 @@ just copy  & paste it via MySQLWorkbench or any other DB Editor and your first T
         * findByLandAndCity
 
 
-##Player
+## Player
 * **Entity of Niki:**
     * **attributes:** firstName, lastName, dayOfBirth, marketValue, playerNumber, height, position, team
     * **searchfeatuers:**
         * findByFirstNameAndLastName
 
 
-##Teams
+## Teams
 * **Entity of Patrick:**
     * **attributes:** name, hometown, startDate, mascot, stadium, league
     * **searchfeatuers:**
