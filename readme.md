@@ -14,7 +14,7 @@ https://github.com/HribernigNikolaus/BasketballSWENGS
 3. [Entity Description](#entity-description) 
 
 
-#How to set up
+# How to set up
 * You need Java 
 * Clone Project
 * edit application.properties_template with your Database information,  
