@@ -27,11 +27,11 @@ spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
 #security.oauth2.resource.token-info-uri=http://localhost8080/oauth/check_token
 
 server.port=8080
-#server.ssl.key-store=classpath:keystore.p12
-#server.ssl.key-store-password=fhjoanneum
-#server.ssl.key-password = fhjoanneum
-#server.ssl.keyStoreType=PKCS12
-#server.ssl.keyAlias=tomcat
+#server.ssl.key-store=resources:jwt.jks
+#server.ssl.key-store-password=mySecretKey
+#server.ssl.key-password=mySecretKey
+#server.ssl.keyStoreType=jwt.jks
+#server.ssl.keyAlias=jwt
 
 #By default, Spring Data REST serves up REST resources at the root URI, "/". There are multiple ways to change the base path.
 #With Spring Boot 1.2+, all it takes is a single property in application.properties:

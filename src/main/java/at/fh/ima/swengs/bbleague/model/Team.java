@@ -20,10 +20,10 @@ public class Team {
 
     private String hometown;
 
-    @JsonDeserialize(using = JsonDateDeserializer.class)
-    @JsonSerialize(using = JsonDateSerializer.class)
-    @Temporal(TemporalType.DATE)
-    private Date startDate;
+ //   @JsonDeserialize(using = JsonDateDeserializer.class)
+   // @JsonSerialize(using = JsonDateSerializer.class)
+   // @Temporal(TemporalType.DATE)
+    private String startDate;
 
     private String mascot;
 
@@ -43,7 +43,7 @@ public class Team {
 
     }
 
-    public Team(String name, String hometown, Date startDate, String mascot, Stadium stadium, League league){
+    public Team(String name, String hometown, String startDate, String mascot, Stadium stadium, League league){
         this.name = name;
         this.hometown = hometown;
         this.startDate = startDate;
@@ -77,11 +77,11 @@ public class Team {
         this.hometown = hometown;
     }
 
-    public Date getStartDate() {
+    public String getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 
